@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Daftar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form>
+
+    <ion-item>
+      <ion-label position="stacked">Nama Lengkap</ion-label>
+      <ion-input type="text" name="nama" [(ngModel)]="nama" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Alamat</ion-label>
+      <ion-input type="text" name="alamat" [(ngModel)]="alamat" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">NoHp</ion-label>
+      <ion-input type="tel" name="nohp" [(ngModel)]="nohp" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Upload CV (PDF / DOC / DOCX)</ion-label>
+      <input type="file" accept=".pdf,.doc,.docx" (change)="uploadCv($event)" />
+    </ion-item>
+
+    <p *ngIf="cvName">File dipilih: {{ cvName }}</p>
+
+    <ion-item>
+      <ion-label position="stacked">Jenis Kelamin</ion-label>
+      <ion-select name="jk" [(ngModel)]="jk" placeholder="Pilih Jenis Kelamin">
+        <ion-select-option value="Laki-laki">Laki-laki</ion-select-option>
+        <ion-select-option value="Perempuan">Perempuan</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Pendidikan Terakhir</ion-label>
+      <ion-select name="pendidikan" [(ngModel)]="pendidikan" placeholder="Pilih Pendidikan">
+        <ion-select-option value="SD">SD</ion-select-option>
+        <ion-select-option value="SMP">SMP</ion-select-option>
+        <ion-select-option value="SMA/SMK">SMA/SMK</ion-select-option>
+        <ion-select-option value="D3">D3</ion-select-option>
+        <ion-select-option value="S1">S1</ion-select-option>
+        <ion-select-option value="S2">S2</ion-select-option>
+        <ion-select-option value="S3">S3</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Tombol Kirim -->
+    <ion-button expand="block" color="primary" (click)="submitForm()">
+      Kirim Lamaran
+    </ion-button>
+
+  </form>
+</ion-content>

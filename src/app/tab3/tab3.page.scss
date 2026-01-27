@@ -1,0 +1,34 @@
+.lamaran-card {
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ion-avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  color: #3880ff;
+  font-size: 14px;
+}
+
+.phone ion-icon {
+  margin-right: 5px;
+}

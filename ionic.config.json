@@ -1,0 +1,7 @@
+{
+  "name": "jobportal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

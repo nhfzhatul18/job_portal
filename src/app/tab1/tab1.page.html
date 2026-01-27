@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Banner -->
+  <div class="banner-container">
+    
+    <div class="banner-text">
+      <h2>Temukan Pekerjaan Impian Anda</h2>
+      <p>Berbagai lowongan terbaik dari berbagai perusahaan.</p>
+    </div>
+  </div>
+
+  <!-- Card Informasi Umum -->
+  <ion-card class="ion-margin">
+    <ion-card-header>
+      <ion-card-title>Informasi Lowongan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Berikut adalah daftar lowongan kerja yang dapat Anda lamar sekarang.</p>
+    </ion-card-content>
+  </ion-card>
+
+ <!-- GRID MENU LOWONGAN -->
+<div class="menu-grid">
+
+  <!-- Lowongan 1 -->
+  <ion-card class="menu-card">
+    <ion-card-content>
+
+      <h2><b>Web Developer</b></h2>
+      <p>PT. Concact</p>
+      <p>Jakarta</p>
+
+      <h3><b>Deskripsi</b></h3>
+      <p>
+        fhdfnsdjbc bkseuhnu ubfchwdyeu bfuwhdwqk uhdcnksdjiqw duwshdnqwsjn 
+        bdwsbwqius wishdwsod usjjs
+      </p>
+
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="lamar({
+          posisi_lamaran: 'Web Developer',
+          perusahaan: 'PT. Concact',
+          lokasi: 'Jakarta'
+        })">
+        Lamar Sekarang
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lowongan 2 -->
+  <ion-card class="menu-card">
+    <ion-card-content>
+
+      <h2><b>Database</b></h2>
+      <p>PT. Anugrah</p>
+      <p>Bandung</p>
+
+      <h3><b>Deskripsi</b></h3>
+      <p>
+        fhdfnsdjbc bkseuhnu ubfchwdyeu bfuwhdwqk uhdcnksdjiqw duwshdnqwsjn 
+        bdwsbwqius wishdwsod usjjs
+      </p>
+
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="lamar({
+          posisi_lamaran: 'Database',
+          perusahaan: 'PT. Anugrah',
+          lokasi: 'Bandung'
+        })">
+        Lamar Sekarang
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lowongan 3 -->
+  <ion-card class="menu-card">
+    <ion-card-content>
+
+      <h2><b>UI/UX Designer</b></h2>
+      <p>PT. ApaAja</p>
+      <p>Padang</p>
+
+      <h3><b>Deskripsi</b></h3>
+      <p>
+        fhdfnsdjbc bkseuhnu ubfchwdyeu bfuwhdwqk uhdcnksdjiqw duwshdnqwsjn 
+        bdwsbwqius wishdwsod usjjs
+      </p>
+
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="lamar({
+          posisi_lamaran: 'UI/UX Designer',
+          perusahaan: 'PT. ApaAja',
+          lokasi: 'Padang'
+        })">
+        Lamar Sekarang
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lowongan 4 -->
+  <ion-card class="menu-card">
+    <ion-card-content>
+
+      <h2><b>Marketing Executive</b></h2>
+      <p>PT. BisaAja</p>
+      <p>Yogyakarta</p>
+
+      <h3><b>Deskripsi</b></h3>
+      <p>
+        fhdfnsdjbc bkseuhnu ubfchwdyeu bfuwhdwqk uhdcnksdjiqw duwshdnqwsjn 
+        bdwsbwqius wishdwsod usjjs
+      </p>
+
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="lamar({
+          posisi_lamaran: 'Marketing Executive',
+          perusahaan: 'PT. BisaAja',
+          lokasi: 'Yogyakarta'
+        })">
+        Lamar Sekarang
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</div>

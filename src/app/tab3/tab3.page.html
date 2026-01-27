@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Riwayat Lamaran</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- ADA DATA -->
+  <ion-list *ngIf="riwayat.length > 0" lines="none">
+
+    <ion-card *ngFor="let item of riwayat" class="lamaran-card">
+  <ion-card-header>
+    <ion-card-title>{{ item.posisi_lamaran }}</ion-card-title>
+    <ion-card-subtitle>
+      {{ item.perusahaan }} - {{ item.lokasi }}
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p><strong>Nama:</strong> {{ item.nama }}</p>
+    <p><strong>Pendidikan:</strong> {{ item.pendidikan }}</p>
+    <p><strong>CV:</strong> {{ item.cv }}</p>
+    <p style="color:gray">{{ item.tanggal }}</p>
+  </ion-card-content>
+</ion-card>
+
+  </ion-list>
+
+  <!-- TIDAK ADA DATA -->
+  <div *ngIf="riwayat.length === 0" class="ion-text-center">
+    <h5>Tidak ada riwayat lamaran</h5>
+    <p style="color: gray;">
+      Kirim lamaran dari Tab 2 untuk melihat riwayat di sini.
+    </p>
+  </div>
+
+</ion-content>
